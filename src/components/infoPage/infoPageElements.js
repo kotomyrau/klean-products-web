@@ -7,15 +7,38 @@ export const InfoContainer = styled.div`
 `
 export const InfoWrapper = styled.div`
   display: grid;
-  height: auto; 
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
-  padding: 0 24px;
-  width: 100%;
-  z-index: 1;
+  grid-template-areas:
+    "headerRow"
+    "paragraphRow1"
+    "paragraphRow2"
+  ;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  height: auto;
+  margin: 4vw 0;
 `
+export const InfoColumn = styled.div`
+  
+`
+
+export const InfoHeaderRow = styled.div`
+  grid-area: headerRow;
+  color: black;
+  background-color: pink;
+
+`
+
+export const InfoParagraphRow1 = styled.div`
+  grid-area: paragraphRow1;
+  color: black;
+  height: auto;
+`
+export const InfoParagraphRow2 = styled.div`
+  grid-area: paragraphRow2;
+  color: black;
+  height: auto;
+`
+
 export const InfoRow = styled.div`
   align-items: center;
   display:grid;
