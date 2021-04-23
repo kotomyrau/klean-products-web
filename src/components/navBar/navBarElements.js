@@ -3,6 +3,9 @@ import {Link as Links}from 'react-scroll'
 
 export const Nav = styled.nav`
   height: auto;
+  position: sticky;
+  top: 0;
+  background: ${({ scrollNav }) => (scrollNav ? '#FEFAE0' : 'transparent')};
 `
 export const NavContainer = styled.div`
   height: auto;

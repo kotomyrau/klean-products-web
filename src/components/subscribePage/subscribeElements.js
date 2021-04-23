@@ -5,7 +5,7 @@ export const SubscribeContainer = styled.div`
   background-color: #FEFAE0;
   margin: 0 auto;
   // width: 24vw;
-  position: relative;
+  // position: relative;
   // border-radius: 5px;
 
   `
