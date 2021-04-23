@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-  background: ${({lightBg}) => (lightBg ? '#FFF' : '#010606')};
+  background: ${({lightBg}) => (lightBg ? '#FEFAE0' : '#CCD5AE')};
   color: #fff;
   padding: 60px 0;
 `

@@ -4,7 +4,7 @@ import MainPage from './components/mainPage';
 import NavBar from './components/navBar';
 import Subscribe from './components/subscribePage';
 import InfoPage from './components/infoPage';
-import {sectionOne, mainPageObjTwo} from './components/infoPage/Data';
+import {sectionOne, sectionTwo} from './components/infoPage/Data';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <MainPage/>
       <Subscribe/>
       <InfoPage {...sectionOne}/>
-      <InfoPage {...mainPageObjTwo}/>
+      <InfoPage {...sectionTwo}/>
     </div>
   );
 }

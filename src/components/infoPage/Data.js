@@ -1,11 +1,10 @@
 
 export const sectionOne = {
     id: 'ingredients',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true, 
-    topLine: 'Cover Letter',
-    headline: "As a web developer and design graduate, I had so much fun making this application...",
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false, 
+    headline: "vegan soap handmade with love",
     subHeader1: '',
     description1: "I’ve decided to make this my application because through this process I have been able to explore Russell and Bromley as a brand and get an idea of how the website works. This web-app was made using HTML, CSS, Javascript (React). I chose those specific shoe images because I wanted to present myself and my personality as R&B shoes. I hope you appreciate a different take on a normal CV and cover letter. I’m greatly interested in the Junior Web Developer role; my qualities and passion to learn quickly and develop my skills make me a good candidate for this role. Having spent the last year studying a range of programming languages to further my skillset, I’m keen to utilise those skills to gain experience in the industry. What truly excites me about this role is the opportunity to improve the online experience for customers. With a background working in retail and also being a customer,  this role would allow me to combine my experience to develop my skills in an e-commerce environment.",
     imgStart: false,
@@ -13,15 +12,14 @@ export const sectionOne = {
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 }
-export const mainPageObjTwo = {
+export const sectionTwo = {
     id: 'our-story',
-    lightBg: true,
+    lightBg: false,
     lightText: false,
     lightTextDesc: false, 
-    topLine: '',
-    headline: 'EDUCATION',
+    headline: 'OUR STORY',
     subHeader1: <h5><strong>Le Wagon</strong> Oct 2020 ~ Dec 2020</h5>,
     description1: <ul>
         <li>Participated in daily coding challenges</li>
