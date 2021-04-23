@@ -12,13 +12,13 @@ const NavBar = () => {
             </NavIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='about'>about</NavLinks>
-              </NavItem>
-              <NavItem>
                 <NavLinks to='ingredients'>ingredients</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='karen'>Karen</NavLinks>
+                <NavLinks to='our-story'>our story</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='shop'>shop</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='contact'>contact</NavLinks>
