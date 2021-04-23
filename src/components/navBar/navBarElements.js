@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import {Link as Links}from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: #FEFAE0;
   height: auto;
 `
 export const NavContainer = styled.div`
   height: auto;
 `
 export const NavLogo = styled.div`
+  text-align: center;
   height: auto;
 `
 export const NavIcon = styled.div`
@@ -26,7 +26,6 @@ export const NavIcon = styled.div`
 `
 
 export const NavMenu = styled.ul`
-  background: #FEFAE0;
   display: flex;
   justify-content: center;
   list-style: none;

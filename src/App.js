@@ -1,8 +1,8 @@
 import './App.css';
+
 import MainPage from './components/mainPage';
 import NavBar from './components/navBar';
 import Subscribe from './components/subscribePage';
-
 
 function App() {
   return (

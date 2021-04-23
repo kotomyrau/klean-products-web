@@ -6,7 +6,7 @@ const NavBar = () => {
       <>
         <Nav>
           <NavContainer>
-            <NavLogo to='/'>Klean Soap</NavLogo>
+            <NavLogo to='/'>Klean Products</NavLogo>
             <NavIcon>
               <FaBars />
             </NavIcon>

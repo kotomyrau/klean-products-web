@@ -1,19 +1,25 @@
 import React from 'react'
-
-import {MainPageContainer, Column1, Img, ImgWrapper, Column2, SubHeader, Header, MainText} from './mainPageElements'
+import {MainPageContainer, Column1, SocialLink, LinkContainer, Column2, Img, ImgWrapper, Column3, SubHeader, Header, MainText} from './mainPageElements'
 import MainImg from '../../images/klean-1.png'
-
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 const MainPage = () => {
     return (
       <MainPageContainer>
         <Column1>
-          <SubHeader>Hey,</SubHeader>
-          <Header>stay klean</Header>
-          <MainText>Natural Hand Made Soap - 100% Biodegradable</MainText>
+        <LinkContainer>
+          <li><SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaInstagram /></SocialLink></li>
+          <li><SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaFacebook /></SocialLink></li>
+        </LinkContainer>
+
         </Column1>
         <Column2>
-          <ImgWrapper><Img src={MainImg} alt='White and Black Flats'/></ImgWrapper>
+          <SubHeader>COMING SOON</SubHeader>
+          <Header>klean soap</Header>
+          <MainText>Natural Hand Made Soap - 100% Biodegradable</MainText>
         </Column2>
+        <Column3>
+          <ImgWrapper><Img src={MainImg} alt='White and Black Flats'/></ImgWrapper>
+        </Column3>
       </MainPageContainer>
     )
 }

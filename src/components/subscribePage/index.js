@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import "./subscribe.css"
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import "./subscribeForm.css"
+// import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Mailchimp from 'react-mailchimp-form'
+import {SubscribeContainer, SubscribeHeader } from './subscribeElements'
 // const Subscribe = () => {
 //     return (
 //         <div>
@@ -14,8 +15,11 @@ import Mailchimp from 'react-mailchimp-form'
 class Subscribe extends Component {
   render() {
     return (
-      <Mailchimp
-        action= {process.env.REACT_APP_MAILCHIMP_URL}
+      <SubscribeContainer>
+        <SubscribeHeader>Stay up to date</SubscribeHeader>
+
+        <Mailchimp
+          action= {process.env.REACT_APP_MAILCHIMP_URL}
           fields={[
             {
               name: 'EMAIL',
@@ -34,7 +38,8 @@ class Subscribe extends Component {
               button: "ScrubScribe"
             }
           }
-      />
+          />
+        </SubscribeContainer>
     )
   }
 }
