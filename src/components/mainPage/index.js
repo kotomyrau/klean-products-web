@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {MainPageContainer, Column1, Img, ImgWrapper, Column2, SubHeader, Header, MainText} from './mainPageElements'
 import MainImg from '../../images/klean-1.png'
 
