@@ -1,21 +1,27 @@
 import React from 'react'
-import {MainPageContainer, Column1, SocialLink, LinkContainer, Column2, Img, ImgWrapper, Column3, SubHeader, Header, MainText} from './mainPageElements'
+import {MainPageContainer, Column1, SocialLink, LinkContainer, LinkItem, Column2, Img, ImgWrapper, Column3, SubHeader, Header, MainText} from './mainPageElements'
 import MainImg from '../../images/klean-1.png'
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 const MainPage = () => {
     return (
       <MainPageContainer>
         <Column1>
-        <LinkContainer>
-          <li><SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaInstagram /></SocialLink></li>
-          <li><SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaFacebook /></SocialLink></li>
-        </LinkContainer>
-
+          <LinkContainer>
+            <LinkItem>
+              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaInstagram /></SocialLink>
+            </LinkItem>
+            <LinkItem>
+              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaTwitter /></SocialLink>
+            </LinkItem>
+            <LinkItem>
+              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaFacebook /></SocialLink>
+            </LinkItem>
+          </LinkContainer>
         </Column1>
         <Column2>
-          <SubHeader>COMING SOON</SubHeader>
+          <SubHeader>COMING SOON...</SubHeader>
           <Header>klean soap</Header>
-          <MainText>Natural Hand Made Soap - 100% Biodegradable</MainText>
+          <MainText>Natural Hand Made Soap - 100% Biodegradable </MainText>
         </Column2>
         <Column3>
           <ImgWrapper><Img src={MainImg} alt='White and Black Flats'/></ImgWrapper>
