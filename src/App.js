@@ -1,6 +1,7 @@
 import './App.css';
 import MainPage from './components/mainPage';
 import NavBar from './components/navBar';
+import Subscribe from './components/subscribePage';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <MainPage/>
+      <Subscribe/>
     </div>
   );
 }
