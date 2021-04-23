@@ -1,0 +1,23 @@
+form button {
+    color: pink;
+    border: 5px solid green;
+}
+
+form input {
+    color: pink;
+    border: 5px solid green;
+    background-color: blue;
+    height: 50px;
+}
+
+form {
+    color: blue;
+    border: 5px solid yellow;
+    width: 25vw;
+    margin: auto;
+    text-align: center;
+
+}
+form .msg-alert p {
+     color: pink !important;
+ }
