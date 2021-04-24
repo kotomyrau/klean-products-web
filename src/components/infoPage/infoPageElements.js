@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-  background: ${({lightBg}) => (lightBg ? '#FEFAE0' : '#CCD5AE')};
+  background: ${({lightBg}) => (lightBg ? '#FEFAE0' : '#E9EDC9')};
   margin: 0;
   padding: 4vh 0 10vh;
 `
@@ -28,7 +28,7 @@ export const InfoContainer = styled.div`
     `
     export const InfoParagraphRow1 = styled.div`
       color: black;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 300;
       grid-area: paragraphRow1;
       height: auto;
@@ -38,6 +38,7 @@ export const InfoContainer = styled.div`
     export const InfoParagraphRow2 = styled.div`
       color: black;
       grid-area: paragraphRow2;
+      font-size: 16px;
       height: auto;
       line-height: 2;
     `
@@ -48,7 +49,7 @@ export const InfoContainer = styled.div`
       "detail1 detail2 detail3";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 8vh 8vw;
+    margin: 8vh 8vw 0;
     `
     export const DetailColumn1 = styled.div`
     grid-area: detail1;
@@ -67,21 +68,21 @@ export const InfoContainer = styled.div`
         width: 100%;
       `
     export const TextWrapper = styled.div`
-      text-align: center;
+      text-align: ${({product}) => product ? 'left' : 'center' };
       margin: 2vh 0;
     `
       export const DetailHeader = styled.div`
-        border-bottom: 1px solid #D4A373;
+        border-bottom: ${({product}) => product ? 'none' : '1px solid #D4A373' };
         color: #D4A373;
         font-family: 'Playfair Display','Georgia','AppleSDGothicNeo-Regular',serif;
-        font-size: 24px;
+        font-size: ${({product}) => product ? '16px' : '20px' };
         font-weight: bold;
-        padding: 0 0 2vh;
+        padding: 0 0 1vh;
         text-transform: lowercase;
       `
       export const DetailText = styled.div`
-        font-size: 16px;
-        margin-top: 2vh;
+        font-size: ${({product}) => product ? '12px' : '16px' };
+        margin-top: ${({product}) => product ? '0' : '2vh' };
       `
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {InfoContainer, InfoWrapper, InfoHeaderRow, InfoParagraphRow1, InfoParagraphRow2, DetailsWrapper, DetailColumn1, DetailColumn2, DetailColumn3, ImgWrapper, Img, DetailHeader, DetailText, TextWrapper} from './infoPageElements'
 
-const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, infoParagraph2, detailImg1, detailHeader1, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3, imgStart, lightText, headline, darkText, description1, description2, description3, subHeader1, subHeader2, subHeader3}) => {
+const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, infoParagraph2, detailImg1, detailHeader1, product, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3, imgStart, lightText, headline, darkText, description1, description2, description3, subHeader1, subHeader2, subHeader3}) => {
     return (
         <> 
           <InfoContainer lightBg={lightBg} id={id}>
@@ -31,27 +31,27 @@ const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, inf
                   <ImgWrapper>
                     <Img src={detailImg1} alt='soap'/>
                   </ImgWrapper>
-                  <TextWrapper>
-                    <DetailHeader>{detailHeader1}</DetailHeader>
-                    <DetailText>{detailText1}</DetailText>
+                  <TextWrapper product={product}>
+                    <DetailHeader product={product}>{detailHeader1}</DetailHeader>
+                    <DetailText product={product}>{detailText1}</DetailText>
                   </TextWrapper>
                 </DetailColumn1>
                 <DetailColumn2>
                   <ImgWrapper>
                     <Img src={detailImg2} alt='soap'/>
                   </ImgWrapper>
-                  <TextWrapper>
-                  <DetailHeader>{detailHeader2}</DetailHeader>
-                    <DetailText>{detailText2}</DetailText>
+                  <TextWrapper product={product}>
+                  <DetailHeader product={product}>{detailHeader2}</DetailHeader>
+                    <DetailText product={product}>{detailText2}</DetailText>
                   </TextWrapper>
                 </DetailColumn2>
                 <DetailColumn3>
                   <ImgWrapper>
                     <Img src={detailImg3} alt='soap'/>
                   </ImgWrapper>
-                  <TextWrapper>
-                    <DetailHeader>{detailHeader3}</DetailHeader>
-                    <DetailText>{detailText3}</DetailText>
+                  <TextWrapper product={product}>
+                    <DetailHeader product={product}>{detailHeader3}</DetailHeader>
+                    <DetailText product={product}>{detailText3}</DetailText>
                   </TextWrapper>
                 </DetailColumn3>
               </DetailsWrapper>
