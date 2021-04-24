@@ -1,7 +1,7 @@
 
 export const sectionOne = {
     id: 'ingredients',
-    lightBg: true,
+    lightBg: false,
     lightHeaderLine: true,
     lightTextDesc: false, 
     infoHeader: "vegan soap handmade with love",
@@ -25,7 +25,7 @@ export const sectionOne = {
 }
 export const sectionTwo = {
     id: 'shop',
-    lightBg: false,
+    lightBg: true,
     lightText: false,
     lightTextDesc: true, 
     infoHeader: "shop our soap",
