@@ -18,7 +18,7 @@ export const InfoContainer = styled.div`
     text-align: center;
   `
     export const InfoHeaderRow = styled.div`
-      border-bottom: 1px solid #CCD5AE;
+      border-bottom: ${({ lightHeaderLine }) => (lightHeaderLine ? '1px solid #CCD5AE' : '1px solid #FEFAE0')};
       color: black;
       grid-area: headerRow;
       font-family: 'Playfair Display','Georgia','AppleSDGothicNeo-Regular',serif;
@@ -49,34 +49,40 @@ export const InfoContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     margin: 8vh 8vw;
-  `
-  export const DetailColumn1 = styled.div`
+    `
+    export const DetailColumn1 = styled.div`
     grid-area: detail1;
-  `
-  export const DetailHeader = styled.div`
-
-  `
-  export const DetailText = styled.div`
-  
-  `
+    `
+    export const DetailColumn2 = styled.div`
+      grid-area: detail2;
+    `
+    export const DetailColumn3 = styled.div`
+      grid-area: detail3;
+    `
     export const ImgWrapper = styled.div`
     `
       export const Img = styled.img`
-      width: 100%;
+        border-radius: 2px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 100%;
       `
     export const TextWrapper = styled.div`
       text-align: center;
-      font-size: 16px;
+      margin: 2vh 0;
     `
-  export const DetailColumn2 = styled.div`
-    grid-area: detail2;
-
-  `
-
-  export const DetailColumn3 = styled.div`
-    grid-area: detail3;
-
-  `
+      export const DetailHeader = styled.div`
+        border-bottom: 1px solid #D4A373;
+        color: #D4A373;
+        font-family: 'Playfair Display','Georgia','AppleSDGothicNeo-Regular',serif;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 0 2vh;
+        text-transform: lowercase;
+      `
+      export const DetailText = styled.div`
+        font-size: 16px;
+        margin-top: 2vh;
+      `
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {InfoContainer, InfoWrapper, InfoHeaderRow, InfoParagraphRow1, InfoParagraphRow2, DetailsWrapper, DetailColumn1, DetailColumn2, DetailColumn3, ImgWrapper, Img, DetailHeader, DetailText, TextWrapper} from './infoPageElements'
 
-const InfoPage = ({lightBg, id, infoHeader, infoParagraph1, infoParagraph2, detailImg1, detailHeader1, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3, imgStart, lightText, headline, darkText, description1, description2, description3, subHeader1, subHeader2, subHeader3}) => {
+const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, infoParagraph2, detailImg1, detailHeader1, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3, imgStart, lightText, headline, darkText, description1, description2, description3, subHeader1, subHeader2, subHeader3}) => {
     return (
         <> 
           <InfoContainer lightBg={lightBg} id={id}>
@@ -22,7 +22,7 @@ const InfoPage = ({lightBg, id, infoHeader, infoParagraph1, infoParagraph2, deta
                       </Column2> 
                   </InfoRow> */}
                  
-                    <InfoHeaderRow>{infoHeader}</InfoHeaderRow>
+                    <InfoHeaderRow lightHeaderLine={lightHeaderLine}>{infoHeader}</InfoHeaderRow>
                     <InfoParagraphRow1>{infoParagraph1}</InfoParagraphRow1>
                     <InfoParagraphRow2>{infoParagraph2}</InfoParagraphRow2>
               </InfoWrapper>
