@@ -6,14 +6,22 @@ export const sectionOne = {
     lightTextDesc: false, 
     infoHeader: "vegan soap handmade with love",
     subHeader1: '',
-    infoParagraph1: "I’ve decided to make this my application because through this process I have been able to explore Russell and Bromley as a brand and get an idea of how the website works. This web-app was made using HTML, CSS, Javascript (React). I chose those specific shoe images because I wanted to present myself and my personality as R&B shoes. I hope you appreciate a different take on a normal CV and cover letter. I’m greatly interested in the Junior Web Developer role; my qualities and passion to learn quickly and develop my skills make me a good candidate for this role. Having spent the last year studying a range of programming languages to further my skillset, I’m keen to utilise those skills to gain experience in the industry. What truly excites me about this role is the opportunity to improve the online experience for customers. With a background working in retail and also being a customer,  this role would allow me to combine my experience to develop my skills in an e-commerce environment.",
-    infoParagraph2: "paragraph 2",
+    infoParagraph1: "Soap is a salt of a fatty acid[1] used in a variety of cleansing and lubricating products. In a domestic setting, soaps are surfactants usually used for washing, bathing, and other types of housekeeping. In industrial settings, soaps are used as thickeners, components of some lubricants, and precursors to catalysts.",
+    infoParagraph2: "When used for cleaning, soap solubilizes particles and grime, which can then be separated from the article being cleaned. In hand washing, as a surfactant, when lathered with a little water, soap kills microorganisms by disorganizing their membrane lipid bilayer and denaturing their proteins. It also emulsifies oils, enabling them to be carried away by running water.",
     imgStart: false,
-    // img: ,
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: true,
+    detailImg1: require('../../images/klean-2.png').default,
+    detailHeader1: "this is my header",
+    detailText1: 'Soap is created by mixing fats and oils with a base, as opposed to detergent which is created by combining chemical compounds in a mixer.',
+    detailImg2: require('../../images/klean-2.png').default,
+    detailHeader2: "this is my header",
+    detailText2: 'Veganism is the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals. An individual who follows the diet or philosophy is known as a vegan.',
+    detailImg3: require('../../images/klean-2.png').default,
+    detailHeader3: "this is my header",
+    detailText3: 'Packaging is the science, art and technology of enclosing or protecting products for distribution, storage, sale, and use. Packaging also refers to the process of designing, evaluating, and producing packages. '
 }
 export const sectionTwo = {
     id: 'our-story',
