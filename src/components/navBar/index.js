@@ -1,24 +1,57 @@
-import React from 'react';
-import {FaBars} from 'react-icons/fa'
+import React, {useState, useEffect} from 'react';
+import {FaBars} from 'react-icons/fa';
 import {Nav, NavContainer, NavLogo, NavIcon, NavMenu, NavItem, NavLinks} from './navBarElements';
-const NavBar = () => {
+import { animateScroll as scroll } from 'react-scroll';
+
+const NavBar = ({ toggle }) => {
+  // change nav background
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+    
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
     return (
       <>
-        <Nav>
+        <Nav scrollNav={scrollNav}>
           <NavContainer>
-            <NavLogo to='/'>Klean Soap</NavLogo>
+            <NavLogo to='/'>Klean Products</NavLogo>
             <NavIcon>
               <FaBars />
             </NavIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='about'>about</NavLinks>
+                <NavLinks to='ingredients'
+                smooth={true} 
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                >ingredients</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='ingredients'>ingredients</NavLinks>
+                <NavLinks to='our-story'
+                 smooth={true} 
+                 duration={500}
+                 spy={true}
+                 exact='true'
+                 offset={-80}
+                 >our story</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='karen'>Karen</NavLinks>
+                <NavLinks to='shop'>shop</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='contact'>contact</NavLinks>

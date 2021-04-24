@@ -2,13 +2,17 @@ import styled from 'styled-components'
 import {Link as Links}from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: #FEFAE0;
   height: auto;
+  position: sticky;
+  top: 0;
+  background: ${({ scrollNav }) => (scrollNav ? '#FEFAE0' : 'transparent')};
+  padding: 4vh 0 1vh 0;
 `
 export const NavContainer = styled.div`
   height: auto;
 `
 export const NavLogo = styled.div`
+  text-align: center;
   height: auto;
 `
 export const NavIcon = styled.div`
@@ -26,7 +30,6 @@ export const NavIcon = styled.div`
 `
 
 export const NavMenu = styled.ul`
-  background: #FEFAE0;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -38,16 +41,17 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   padding: 0 40px;
   height: auto;
+
 `
 
 export const NavLinks = styled(Links)`
   color: #000;
   font-size: 16px;
   text-transform: uppercase;
-
+  padding: 0 0 1vh;
 
   
   &.active {
-    border-bottom: 3px solid pink;
+    border-bottom: 4px solid #D4A373;
   }
 `

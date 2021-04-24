@@ -1,7 +1,10 @@
 import './App.css';
+
 import MainPage from './components/mainPage';
 import NavBar from './components/navBar';
 import Subscribe from './components/subscribePage';
+import InfoPage from './components/infoPage';
+import {sectionOne, sectionTwo} from './components/infoPage/Data';
 
 
 function App() {
@@ -10,6 +13,8 @@ function App() {
       <NavBar/>
       <MainPage/>
       <Subscribe/>
+      <InfoPage {...sectionOne}/>
+      <InfoPage {...sectionTwo}/>
     </div>
   );
 }
