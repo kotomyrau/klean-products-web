@@ -28,12 +28,13 @@ export const AboutText = styled.p`
 `
 export const AboutColumn2 = styled.div`
   grid-area: aboutCol2;
+  margin: auto 4vw;
 `
 export const ImgWrapper = styled.div`
-  margin: auto 4vw;
-
-`
-export const Img = styled.img`
+  
+  `
+  export const Img = styled.img`
   width: 100%;
   border-radius: 50%;
+
 `
