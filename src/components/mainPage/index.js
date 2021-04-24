@@ -8,13 +8,13 @@ const MainPage = () => {
         <Column1>
           <LinkContainer>
             <LinkItem>
-              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaInstagram /></SocialLink>
+              <SocialLink href="https://www.instagram.com/kleansoap/" target='blank'><FaInstagram /></SocialLink>
             </LinkItem>
             <LinkItem>
-              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaTwitter /></SocialLink>
+              <SocialLink href="#" target='blank'><FaTwitter /></SocialLink>
             </LinkItem>
             <LinkItem>
-              <SocialLink href="http://www.github.com/kotomyrau" target='blank'><FaFacebook /></SocialLink>
+              <SocialLink href="#" target='blank'><FaFacebook /></SocialLink>
             </LinkItem>
           </LinkContainer>
         </Column1>
