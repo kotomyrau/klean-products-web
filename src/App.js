@@ -6,6 +6,7 @@ import Subscribe from './components/subscribePage';
 import InfoPage from './components/infoPage';
 import {sectionOne, sectionTwo} from './components/infoPage/Data';
 import About from './components/aboutPage';
+import Contact from './components/contactPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About/>
       <InfoPage {...sectionOne}/>
       <InfoPage {...sectionTwo}/>
+      <Contact/>
     </div>
   );
 }

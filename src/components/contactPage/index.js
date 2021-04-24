@@ -1,5 +1,5 @@
 import React from 'react'
-import {} from './contactPageElement'
+import {ContactContainer} from './contactPageElement'
 
 const Contact = () => {
   return (
