@@ -1,0 +1,94 @@
+form {
+    padding: 4vh 2vw;
+    /* margin: 4vh 0; */
+    width: 32vw;
+    text-align: center;
+    margin: auto;
+
+}
+
+h1 {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 4vh;
+    padding: 0 0 4vh 0;
+}
+
+form label {
+    color: black;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+
+    
+
+}
+
+form input {
+    color: #000;
+    border: none;
+    border-bottom: 0.1px solid #D4A373;
+    /* border-radius: 50px; */
+    background-color: transparent;
+    font-size: 16px;
+
+    height: 20px;
+    margin: 0;
+    width: 100%;
+    margin-left: 1vw;
+    padding: 0 0.4vw 1vh;
+
+}
+input:focus, textarea:focus, select:focus {
+    outline: none; 
+}
+
+form textarea {
+    color: #000;
+    border: none;
+    background-color:#FEFAE0;
+    font-size: 16px;
+    min-height: 20px;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    resize: none;
+    padding: 2vh 2vw;
+    margin: 2vh;
+    /* border:  0.1px solid #D4A373; */
+}
+form button {
+    /* color: #FEFAE0;
+    border: 0.1px solid #D4A373;
+    border-radius: 50px;
+    background: #D4A373;
+    font-size: 16px;
+    padding: 3px 6px; */
+}
+
+.form-button {
+    color: #FEFAE0;
+    background: #D4A373;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 1vh 1vw;
+    height: auto;
+
+}
+form {
+    /* color: blue;
+    /* border: 5px solid yellow; */
+    /* width: 25vw;
+    margin: auto;
+    text-align: center; */ 
+
+}
+form .msg-alert p {
+     color: pink !important;
+ }

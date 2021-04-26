@@ -1,6 +1,7 @@
 import React from 'react'
-import {ContactContainer, FormContainer, FormTextArea, FormButton} from './contactPageElement'
+import {ContactContainer, FormContainer, FormTextArea, FormHeader, FormButton} from './contactPageElement'
 import emailjs from "emailjs-com";
+import "../../components/forms.css"
 
 const user_id = process.env.REACT_APP_EMAIL_JS_API_KEY
 const service_id = process.env.REACT_APP_EMAIL_JS_SERVICE_ID
@@ -21,25 +22,25 @@ const Contact = () => {
   return (
     <>
       <ContactContainer id='contact'>
-          <h1>hi</h1>
           <FormContainer>
             <form onSubmit={sendEmail}>
+              <h1>contact us</h1>
               <label>
-                Name:
-                <input type="text" placeholder="Name" name="name" />
+                Name
+                <input type="text" name="name" />
+              </label>
+              <label>
+              Email
+                <input type="text" name="email" required='true' />
               </label> 
               <label>
-              Email:
-                <input type="text" placeholder="Email" name="email" required='true' />
-              </label> 
-              <label>
-                Subject:
-                <input type="text" placeholder="Subject" name="subject" />
+                Subject
+                <input type="text"  name="subject" />
               </label>
               <FormTextArea>
-                <textarea rows="8" placeholder="Your Message" name="message"></textarea>
+                <textarea rows="8" name="message"></textarea>
               </FormTextArea>
-              <input type="submit" value="Send Message" />
+              <input class="form-button" type="submit" value="Send Message" />
             </form>
           </FormContainer>
       </ContactContainer>    

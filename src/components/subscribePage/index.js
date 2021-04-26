@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./subscribeForm.css"
+import "../../components/forms.css"
 // import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Mailchimp from 'react-mailchimp-form'
 import {SubscribeContainer, SubscribeWrapper, SubscribeHeader } from './subscribeElements'
