@@ -48,8 +48,8 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Links)`
-color: ${({ scrollNav }) => (scrollNav ? '#A5A58D' : '#FEFAE0')};
-
+  color: ${({ scrollNav }) => (scrollNav ? '#A5A58D' : '#FEFAE0')};
+  cursor: pointer;
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 0 1vh;

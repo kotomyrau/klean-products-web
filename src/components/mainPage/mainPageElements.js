@@ -2,15 +2,16 @@ import styled from 'styled-components'
 
 // HERO IMAGE PAGE
 export const MainPageContainer = styled.div`
-  height: 60vh;
+  height: fit-content;
   background-color: transparent;
-  box-shadow: 0 4px 2px -2px grey;
   display: grid; 
   grid-template-areas: 
-      "col1 col2 col3";
-  grid-template-columns: 0.2fr 1fr 1fr;
+      "col1 col2";
+  grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 1fr;
-  margin: 8vh 0 0; 
+  margin: 8vh 0 0;
+  padding: 0 0 8vh 0; 
+  width: 40vw;
 `
 
 // COLUMN 1: Social Media Icons
@@ -58,10 +59,18 @@ export const Column3 = styled.div`
   grid-area: col3;
 `
   export const ImgWrapper = styled.div`
-    margin: 0;
-    width: 500px;
+    // margin: 0;
+    // width: 500px;
   `
     export const Img = styled.img`
-      width: auto;
-      height: 55vh;
+    top: 0;
+    right: 0;
+    margin-top: 16vh;
+    margin-right: auto;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    max-width: 60vw;
     `
