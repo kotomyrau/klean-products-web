@@ -1,5 +1,5 @@
 import React from 'react'
-import {ContactContainer, FormContainer, FormTextArea, FormHeader, FormButton} from './contactPageElement'
+import {ContactContainer, FormContainer} from './contactPageElement'
 import emailjs from "emailjs-com";
 import "../../components/forms.css"
 
@@ -37,9 +37,7 @@ const Contact = () => {
                 Subject
                 <input class="form-input"  type="text"  name="subject" />
               </label>
-              <FormTextArea>
                 <textarea rows="8" name="message"></textarea>
-              </FormTextArea>
               <input class="form-button" type="submit" value="Send Message" />
             </form>
           </FormContainer>

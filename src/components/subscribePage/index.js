@@ -1,24 +1,15 @@
 import React, { Component } from 'react'
 import "../../components/forms.css"
-// import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Mailchimp from 'react-mailchimp-form'
 import {SubscribeContainer, SubscribeWrapper, SubscribeHeader } from './subscribeElements'
-// const Subscribe = () => {
-//     return (
-//         <div>
-//               <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
 
-//         </div>
-//     )
-// }
- 
 class Subscribe extends Component {
   render() {
     return (
       <SubscribeContainer>
         <SubscribeWrapper>
 
-          <SubscribeHeader>Sign up to our newsletter</SubscribeHeader>
+          <SubscribeHeader>Subscribe to our newsletter</SubscribeHeader>
 
           <Mailchimp
             action= {process.env.REACT_APP_MAILCHIMP_URL}

@@ -38,10 +38,12 @@
    }
 
   h1{
-     font-size: 32px;
-     text-transform: lowercase;
-     font-weight: 500;
-     font-family: 'Playfair Display', serif;
+    color: #6B705C;
+    font-size: 32px;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    padding: 0 0 4vh 0;
 
   }
 
