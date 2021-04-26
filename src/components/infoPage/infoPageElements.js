@@ -71,7 +71,7 @@ export const InfoContainer = styled.div`
       text-align: ${({product}) => product ? 'left' : 'center' };
       margin: 2vh 0;
     `
-      export const DetailHeader = styled.div`
+      export const DetailHeader = styled.h3`
         border-bottom: ${({product}) => product ? 'none' : '1px solid #D4A373' };
         color: #D4A373;
         font-family: 'Playfair Display','Georgia','AppleSDGothicNeo-Regular',serif;
@@ -80,7 +80,7 @@ export const InfoContainer = styled.div`
         padding: 0 0 1vh;
         text-transform: lowercase;
       `
-      export const DetailText = styled.div`
+      export const DetailText = styled.p`
         font-size: ${({product}) => product ? '12px' : '16px' };
         margin-top: ${({product}) => product ? '0' : '2vh' };
       `

@@ -23,19 +23,19 @@ const Contact = () => {
     <>
       <ContactContainer id='contact'>
           <FormContainer>
-            <form onSubmit={sendEmail}>
+            <form class="contact-form" onSubmit={sendEmail}>
               <h1>contact us</h1>
               <label>
                 Name
-                <input type="text" name="name" />
+                <input class="form-input" type="text" name="name" />
               </label>
               <label>
               Email
-                <input type="text" name="email" required='true' />
+                <input class="form-input"  type="text" name="email" required='true' />
               </label> 
               <label>
                 Subject
-                <input type="text"  name="subject" />
+                <input class="form-input"  type="text"  name="subject" />
               </label>
               <FormTextArea>
                 <textarea rows="8" name="message"></textarea>

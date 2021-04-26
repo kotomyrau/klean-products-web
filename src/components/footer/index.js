@@ -2,6 +2,7 @@ import React from 'react'
 import {FooterContainer, FooterBrandWrapper, BrandName, BrandSlogan, SocialMediaWrapper, SocialMediaHeader, SocialMediaItem, SocialMediaLink, SubscribeWrapper, SubscribeHeader, FooterCopyrightWrapper, FooterCopyrightText} from './footerElements'
 import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import Mailchimp from 'react-mailchimp-form'
+import "../../components/forms.css"
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
               Klean Products
               </BrandName>
               <BrandSlogan>
-              Stay Klean, feel klean
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </BrandSlogan>
             </FooterBrandWrapper>
           <SubscribeWrapper>
@@ -36,7 +37,7 @@ const Footer = () => {
                   error: "An unexpected internal error has occurred.",
                   empty: "Please enter a valid email.",
                   duplicate: "Too many subscribe attempts for this email address",
-                  button: "ScrubScribe"
+                  button: "Subscribe"
                 }
               }
               />
