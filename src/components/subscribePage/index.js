@@ -8,37 +8,32 @@ class Subscribe extends Component {
     return (
       <SubscribeContainer>
         <SubscribeWrapper>
-
           <SubscribeHeader>Subscribe to our newsletter</SubscribeHeader>
-
-          <Mailchimp
-            action= {process.env.REACT_APP_MAILCHIMP_URL}
-            fields={[
-              {
-                name: 'EMAIL',
-                placeholder: 'Your Email',
-                type: 'email1',
-                required: true,
+            <Mailchimp
+              action= {process.env.REACT_APP_MAILCHIMP_URL}
+              fields={[
+                {
+                  name: 'EMAIL',
+                  placeholder: 'Your Email',
+                  type: 'email1',
+                  required: true,
+                }
+              ]}
+              messages = { 
+                {
+                  sending: "just a moment...",
+                  success: "Thank you for subscribing!",
+                  error: "An unexpected internal error has occurred.",
+                  empty: "Please enter a valid email.",
+                  duplicate: "Too many subscribe attempts for this email address",
+                  button: "Subscribe"
+                }
               }
-            ]}
-            messages = { 
-              {
-                sending: "Kleaning...",
-                success: "Thank you for subscribing!",
-                error: "An unexpected internal error has occurred.",
-                empty: "Please enter a valid email.",
-                duplicate: "Too many subscribe attempts for this email address",
-                button: "Subscribe"
-              }
-            }
             />
-          </SubscribeWrapper>
-        </SubscribeContainer>
+        </SubscribeWrapper>
+      </SubscribeContainer>
     )
   }
 }
    
-  export default Subscribe;
-
-
-// export default Subscribe;
+export default Subscribe;
