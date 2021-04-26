@@ -57,26 +57,18 @@ form label {
 
 /* SUBSCRIBE NEWSLETTER */
 input {
-  background-color: #FEFAE0;
+  background-color: #B7B7A4;
   border: none;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
-  color: #000;
+  color: #FEFAE0;
   font-size: 12px;
   font-weight: 500;
   height: 4vh;
+  letter-spacing: 0.8px;
   padding: 0 0 0 15px;
   width: 16vw;
 }
-
-/* NEWSLETTER BELOW HERO SECTION */
-input[placeholder="Your Email" i] {
-  background-color: #B7B7A4;
-  color: #FEFAE0;
-  font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 0.8px;
-}    
 
 /* MESSAGES CLASS */
 form .msg-alert p {
@@ -89,7 +81,7 @@ form .msg-alert p {
 
 /* SUBSCRIBE BUTTON */
 button {
-  background-color: #B7B7A4;
+  background-color: #6B705C;
   border: none;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;

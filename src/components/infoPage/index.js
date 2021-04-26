@@ -1,7 +1,7 @@
 import React from 'react'
 import {InfoContainer, InfoWrapper, InfoHeaderRow, InfoParagraphRow1, InfoParagraphRow2, DetailsWrapper, DetailColumn1, DetailColumn2, DetailColumn3, ImgWrapper, Img, DetailHeader, DetailText, TextWrapper} from './infoPageElements'
 
-const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, infoParagraph2, lightText, detailImg1, detailHeader1, product, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3, imgStart, headline, darkText, description1, description2, description3, subHeader1, subHeader2, subHeader3}) => {
+const InfoPage = ({lightBg, id, lightHeaderLine, infoHeader, infoParagraph1, infoParagraph2, lightText, detailImg1, detailHeader1, product, detailText1, detailHeader2, detailImg2, detailText2, detailImg3, detailHeader3, detailText3}) => {
   return (
     <> 
       <InfoContainer lightBg={lightBg} id={id}>
