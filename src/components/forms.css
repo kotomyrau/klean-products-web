@@ -1,0 +1,120 @@
+.contact-form {
+    padding: 4vh 2vw;
+    /* margin: 4vh 0; */
+    width: 32vw;
+    text-align: center;
+    margin: auto;
+
+}
+
+h1 {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 4vh;
+    padding: 0 0 4vh 0;
+}
+
+form label {
+    color: black;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+
+    
+
+}
+
+.form-input {
+    color: #000;
+    border: none;
+    border-bottom: 0.1px solid #D4A373;
+    /* border-radius: 50px; */
+    background-color: transparent;
+    font-size: 16px;
+
+    height: 20px;
+    margin: 0;
+    width: 100%;
+    margin-left: 1vw;
+    padding: 0 0.4vw 1vh;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+
+}
+input:focus, textarea:focus, select:focus {
+    outline: none; 
+}
+
+input[placeholder="Your Email" i] {
+    background-color: #E9EDC9;
+
+}
+
+form textarea {
+    color: #000;
+    border: none;
+    background-color:#FEFAE0;
+    font-size: 16px;
+    min-height: 20px;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    resize: none;
+    padding: 2vh 2vw;
+    /* border:  0.1px solid #D4A373; */
+}
+
+
+.form-button {
+    color: #FEFAE0;
+    background: #D4A373;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 1vh 1vw;
+    height: auto;
+    border:  1px solid #D4A373;
+    font-size: 12px;
+}
+
+form .msg-alert p {
+     color: pink !important;
+ }
+
+ form {
+
+
+ }
+
+
+ 
+ button {
+    background-color: #FAEDCD;
+    /* border-radius: 50px; */
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border: none;
+    padding: 1vh 1vw;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 4vh;
+ }
+
+input {
+    color: #000;
+    background-color: #FEFAE0;
+    border: none;
+    height: 4vh;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0 0 15px ;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+}

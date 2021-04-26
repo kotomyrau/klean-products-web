@@ -7,12 +7,14 @@ export const SubscribeContainer = styled.div`
   // width: 24vw;
   // position: relative;
   // border-radius: 5px;
+  text-align: center;
 
   `
   export const SubscribeWrapper = styled.div`
-    padding: 8vh
+
   `
   export const SubscribeHeader = styled.h6`
     text-align: center;
     font-size: 16px;
+    color: #D4A373;
   `
