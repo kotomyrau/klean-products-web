@@ -20,7 +20,7 @@ const MainPage = () => {
           </LinkContainer>
         </Column1>
         <Column2>
-          <SubHeader>coming soon</SubHeader>
+          <SubHeader>COMING SOON...</SubHeader>
           <Header>klean soap</Header>
           <MainText>Natural Hand Made Soap - 100% Biodegradable </MainText>
         </Column2>

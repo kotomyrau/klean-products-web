@@ -27,7 +27,7 @@ const NavBar = ({ toggle }) => {
       <>
         <Nav scrollNav={scrollNav}>
           <NavContainer>
-            <NavLogo to='/'>Klean Products</NavLogo>
+            <NavLogo to='/' scrollNav={scrollNav}>Klean Products</NavLogo>
             <NavIcon>
               <FaBars />
             </NavIcon>
@@ -39,6 +39,7 @@ const NavBar = ({ toggle }) => {
                  spy={true}
                  exact='true'
                  offset={-80}
+                 scrollNav={scrollNav}
                  >our story</NavLinks>
               </NavItem>
               <NavItem>
@@ -48,6 +49,7 @@ const NavBar = ({ toggle }) => {
                 spy={true}
                 exact='true'
                 offset={-80}
+                scrollNav={scrollNav}
                 >ingredients</NavLinks>
               </NavItem>
               <NavItem>
@@ -57,6 +59,7 @@ const NavBar = ({ toggle }) => {
                  spy={true}
                  exact='true'
                  offset={-80}
+                 scrollNav={scrollNav}
                  >shop</NavLinks>
               </NavItem>
               <NavItem>
@@ -66,6 +69,7 @@ const NavBar = ({ toggle }) => {
                   spy={true}
                   exact='true'
                   offset={-80}
+                  scrollNav={scrollNav}
                   >contact</NavLinks>
               </NavItem>
             </NavMenu>
