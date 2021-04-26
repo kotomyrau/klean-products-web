@@ -15,7 +15,7 @@ class Subscribe extends Component {
                 {
                   name: 'EMAIL',
                   placeholder: 'Your Email',
-                  type: 'email1',
+                  type: 'email',
                   required: true,
                 }
               ]}
