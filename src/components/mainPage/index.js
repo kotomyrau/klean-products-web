@@ -2,6 +2,7 @@ import React from 'react'
 import {MainPageContainer, Column1, SocialLink, LinkContainer, LinkItem, Column2, Img, ImgWrapper, Column3, SubHeader, Header, MainText} from './mainPageElements'
 import MainImg from '../../images/klean-1.png'
 import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
+
 const MainPage = () => {
     return (
       <MainPageContainer>
@@ -19,7 +20,7 @@ const MainPage = () => {
           </LinkContainer>
         </Column1>
         <Column2>
-          <SubHeader>COMING SOON...</SubHeader>
+          <SubHeader>coming soon</SubHeader>
           <Header>klean soap</Header>
           <MainText>Natural Hand Made Soap - 100% Biodegradable </MainText>
         </Column2>
