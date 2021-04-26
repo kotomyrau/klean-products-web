@@ -10,10 +10,14 @@ export const Nav = styled.nav`
 `
 export const NavContainer = styled.div`
   height: auto;
+  
 `
-export const NavLogo = styled.div`
+export const NavLogo = styled.h6`
   text-align: center;
   height: auto;
+  font-size: 4vh;
+  font-weight: bold;
+  color: ${({ scrollNav }) => (scrollNav ? '#A5A58D' : '#FEFAE0')};
 `
 export const NavIcon = styled.div`
   display: none;
@@ -34,7 +38,6 @@ export const NavMenu = styled.ul`
   justify-content: center;
   list-style: none;
   margin-right: -22px
-  
   @media screen and (max-width: 768px) {
     display: none;
   }`
@@ -45,13 +48,15 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Links)`
-  color: #000;
+  color: ${({ scrollNav }) => (scrollNav ? '#A5A58D' : '#FEFAE0')};
+  cursor: pointer;
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 0 1vh;
+  font-weight: 400;
 
   
   &.active {
-    border-bottom: 4px solid #D4A373;
+    border-bottom: 4px solid #6B705C;
   }
 `

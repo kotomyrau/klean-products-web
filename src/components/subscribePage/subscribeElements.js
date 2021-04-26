@@ -1,20 +1,17 @@
 import styled from 'styled-components'
 
 export const SubscribeContainer = styled.div`
-  height: auto;
   background-color: #FEFAE0;
-  margin: 0 auto;
-  // width: 24vw;
-  // position: relative;
-  // border-radius: 5px;
-  text-align: center;
-
-  `
+  box-shadow: 0px -2px 2px #B7B7A4;
+  height: auto;
+`
   export const SubscribeWrapper = styled.div`
-
-  `
-  export const SubscribeHeader = styled.h6`
+    margin: 0 auto;
+    padding: 4vh 0;
     text-align: center;
-    font-size: 16px;
-    color: #D4A373;
   `
+    export const SubscribeHeader = styled.h6`
+      color: #6B705C;
+      font-size: 16px;
+      text-align: center;
+    `
