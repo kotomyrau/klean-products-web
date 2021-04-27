@@ -27,8 +27,12 @@ export const NavLogo = styled.h6`
    display: inline-block; 
    width: fit-content;
    padding: 0 0 0 20px;
+   font-size: 2vh;
+  }
+  @media screen and (max-width: 768px) {
+  }
+  `
 
-  }`
 export const NavIcon = styled.div`
   display: none;
   
@@ -42,6 +46,9 @@ export const NavIcon = styled.div`
     // transform: translate(-100%, 60%);
     font-size: 4vh;
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+      font-size: 2vh;
+     }
   }
 `
 

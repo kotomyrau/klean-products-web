@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
 background-color: #FEFAE0;
-padding: 8vh 0;
+padding: 4vh 0;
 `
 export const AboutWrapper = styled.div`
     display: grid;

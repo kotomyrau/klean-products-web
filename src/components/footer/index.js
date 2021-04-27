@@ -10,33 +10,9 @@ const Footer = () => {
       <FooterBrandWrapper>
         <BrandName>Klean Products</BrandName>
         <BrandSlogan>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Friendly not only to your skin but to the earth. Let's live consciously and Klean.
         </BrandSlogan>
       </FooterBrandWrapper>
-      {/* <SubscribeWrapper>
-        <SubscribeHeader>Stay up to date</SubscribeHeader>
-        <Mailchimp
-          action= {process.env.REACT_APP_MAILCHIMP_URL}
-          fields={[
-            {
-              name: 'EMAIL',
-              placeholder: 'Your Email',
-              type: 'email',
-              required: true,
-            }
-          ]}
-          messages = { 
-            {
-              sending: "one moment...",
-              success: "Thank you for subscribing!",
-              error: "An unexpected internal error has occurred.",
-              empty: "Please enter a valid email.",
-              duplicate: "Too many subscribe attempts for this email address",
-              button: "Subscribe"
-            }
-          }
-        />
-      </SubscribeWrapper> */}
       <FooterCopyrightWrapper>
         <SocialMediaWrapper>
           <SocialMediaHeader>social media</SocialMediaHeader>
