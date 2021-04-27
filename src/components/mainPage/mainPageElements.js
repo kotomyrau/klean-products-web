@@ -19,7 +19,7 @@ export const MainPageContainer = styled.div`
   }
   @media screen and (max-width: 425px) {
     // padding: 0 0 1vh; 
-    margin: 2vh 0 12vh;
+    margin: 2vh 0 16vh;
     width: 88vw;
   }
 `
@@ -121,7 +121,7 @@ export const Column3 = styled.div`
       margin: 10vh 0;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 425px) {
         top: 16vh;
         max-width: 70vw;
     }
