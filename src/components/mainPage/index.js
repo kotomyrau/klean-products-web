@@ -6,8 +6,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 const MainPage = () => {
     return (
       <MainPageContainer>
-                  <ImgWrapper><Img src={MainImg} alt='White and Black Flats'/></ImgWrapper>
-
+        <ImgWrapper><Img src={MainImg} alt='Wood Basket of Soap Bars'/></ImgWrapper>
         <Column1>
           <LinkContainer>
             <LinkItem>
