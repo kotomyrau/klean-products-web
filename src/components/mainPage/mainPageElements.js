@@ -18,7 +18,9 @@ export const MainPageContainer = styled.div`
     width: 50vw;
   }
   @media screen and (max-width: 425px) {
-    padding: 0 0 1vh; 
+    // padding: 0 0 1vh; 
+    margin: 2vh 0 12vh;
+    width: 88vw;
   }
 `
 // COLUMN 1: Social Media Icons
@@ -75,7 +77,7 @@ export const Column2 = styled.div`
     }
 
     @media screen and (max-width: 425px) {
-      font-size: 3vh;
+      font-size: 4vh;
       line-height: 100%;
       padding: 1vh 0 1vh;
     }
@@ -120,7 +122,8 @@ export const Column3 = styled.div`
     }
 
     @media screen and (max-width: 320px) {
-        top: 4vh;
+        top: 16vh;
+        max-width: 70vw;
     }
   `
     
