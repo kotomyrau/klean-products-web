@@ -72,5 +72,5 @@ export const Column3 = styled.div`
     height: auto;
     position: absolute;
     object-fit: cover;
-    max-width: 60vw;
+    max-width: 62vw;
     `
