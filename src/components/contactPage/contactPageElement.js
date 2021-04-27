@@ -6,6 +6,9 @@ export const ContactContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   height:88vh;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `
   export const FormContainer = styled.div`
     margin: auto;
