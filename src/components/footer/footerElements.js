@@ -15,6 +15,9 @@ export const FooterContainer = styled.div`
     grid-area: brand;
     height: fit-content;
     margin: 0 24vw 0 0;
+    @media screen and (max-width: 768px) {
+      margin: 0 4vw 0 0;
+    }
   `
     export const BrandName = styled.h6`
       color: #6B705C;
@@ -22,15 +25,7 @@ export const FooterContainer = styled.div`
     export const BrandSlogan = styled.p`
       font-weight: 400;
     `  
-  // COLUMN 2: SUBSCRIPTION SIGN UP
-  // export const SubscribeWrapper = styled.form`
-  // padding: 0;
-  //   text-align: center;
-  //   margin: 0 auto;
-  // `
-  //   export const SubscribeHeader = styled.h6`
-  //   color: #6B705C;
-  //   `
+
   // COLUMN 3: SOCIAL MEDIA ICONS  
   export const SocialMediaWrapper = styled.ul`
     grid-area: newsletter;
