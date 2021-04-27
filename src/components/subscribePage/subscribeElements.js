@@ -12,6 +12,6 @@ export const SubscribeContainer = styled.div`
   `
     export const SubscribeHeader = styled.h6`
       color: #6B705C;
-      font-size: 16px;
+      font-size: 2vh;
       text-align: center;
     `

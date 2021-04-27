@@ -38,16 +38,29 @@
 
   h1{
     color: #6B705C;
-    font-size: 32px;
+    font-size: 4vh;
     text-transform: lowercase;
     font-weight: 500;
     font-family: 'Playfair Display', serif;
     padding: 4vh 0;
 
+    
   }
 
-   p {
+
+  
+  p {
     color: #6B705C;
-     font-size: 12px;
-     text-align: left;
-   }
+    font-size: 12px;
+    text-align: left;
+  }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.8vh;
+  }
+  
+  h6 {
+    font-size: 10px;
+  }
+}

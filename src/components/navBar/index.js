@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {Nav, NavContainer, NavLogo, NavIcon, NavMenu, NavItem, NavLinks} from './navBarElements';
 import { animateScroll as scroll } from 'react-scroll';
+import SideNavbar from '../sideNavbar';
 
 const NavBar = ({ toggle }) => {
   // change nav background
@@ -27,9 +28,9 @@ const NavBar = ({ toggle }) => {
       <>
         <Nav scrollNav={scrollNav}>
           <NavContainer>
-            <NavLogo to='/' scrollNav={scrollNav}>Klean Products</NavLogo>
-            <NavIcon>
-              <FaBars />
+            <NavLogo to='/' scrollNav={scrollNav} onClick={toggleHome}>Klean Products</NavLogo>
+            <NavIcon scrollNav={scrollNav}>
+              <FaBars onClick={toggle} />
             </NavIcon>
             <NavMenu>
               <NavItem>
