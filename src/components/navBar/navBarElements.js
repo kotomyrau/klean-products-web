@@ -7,6 +7,9 @@ export const Nav = styled.nav`
   top: 0;
   background: ${({ scrollNav }) => (scrollNav ? '#FEFAE0' : 'transparent')};
   padding: 4vh 0 1vh 0;
+  @media screen and (max-width: 768px) {
+    padding: 3vh 0;
+  }
 
 `
 export const NavContainer = styled.div`
@@ -26,10 +29,9 @@ export const NavLogo = styled.h6`
   @media screen and (max-width: 768px) {
    display: inline-block; 
    width: fit-content;
-   padding: 0 0 0 20px;
+   padding: 1vh 0 0 20px;
    font-size: 2vh;
-  }
-  @media screen and (max-width: 768px) {
+  margin: auto;
   }
   `
 
@@ -39,16 +41,10 @@ export const NavIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: inline-block;
     color: ${({ scrollNav }) => (scrollNav ? '#A5A58D' : '#FEFAE0')};
-
-    // position: absolute;
-    // top: 0;
     float: right;
-    // transform: translate(-100%, 60%);
     font-size: 4vh;
     cursor: pointer;
-    @media screen and (max-width: 768px) {
-      font-size: 2vh;
-     }
+
   }
 `
 
