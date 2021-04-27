@@ -46,8 +46,10 @@ export const FooterContainer = styled.div`
   export const FooterCopyrightWrapper = styled.div`
     grid-area: socialMedia;
   `
-    export const FooterCopyrightText = styled.h6`
+    export const FooterCopyrightText = styled.p`
       color: #6B705C;
+      // font-weight: 400;
       margin: 2vh 0 1vh 0;
       text-align: right;
+      text-transform: uppercase;
     `

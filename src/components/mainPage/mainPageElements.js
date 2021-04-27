@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 // HERO IMAGE PAGE
 export const MainPageContainer = styled.div`
-  height: fit-content;
+  // height: fit-content;
   background-color: transparent;
   display: grid; 
   grid-template-areas: 
@@ -10,16 +10,15 @@ export const MainPageContainer = styled.div`
   grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 1fr;
   margin: 8vh 0 0;
-  padding: 0 0 8vh 0; 
+  padding: 0 0 4vh; 
   width: 40vw;
   
   @media screen and (max-width: 768px) {
-    padding: 0 0 8vh 0; 
     margin: 2vh 0 0;
     width: 50vw;
   }
-  @media screen and (max-width: 575px) {
-    padding: 0 0 2vh 0; 
+  @media screen and (max-width: 425px) {
+    padding: 0 0 10vh; 
   }
 `
 // COLUMN 1: Social Media Icons
@@ -36,6 +35,11 @@ export const Column1 = styled.div`
   `
     export const LinkItem = styled.li`
       padding: 8px 0;
+      font-size: 2.8vh;
+      @media screen and (max-width: 425px) {
+        font-size: 1vh;
+        padding: 4px 0;
+      }
     `
       export const SocialLink = styled.a`
         color: #FEFAE0;
@@ -46,26 +50,34 @@ export const Column2 = styled.div`
   grid-area: col2;
   text-align: left;
   height: auto;
+  padding: 0;
 `
   export const SubHeader = styled.h1`
     color: #6B705C;
     text-transform: uppercase;
     padding: 0;
 
-    @media screen and (max-width: 768px) {
-      font-size: 3vh;
+    @media screen and (max-width: 425px) {
+      font-size: 2vh;
     }
   `
   export const Header = styled.h1`
     color: #FEFAE0;
     font-size: 8vw;
     line-height: 80%;
-    margin: 4vh 0 0;
+    margin: 0;
     text-transform: uppercase;
-
+    padding: 4vh 0 8vh;
     @media screen and (max-width: 768px) {
-      margin: 1vh 0 0;
-      padding: 1vh 0;
+      // margin: 1vh 0 0;
+      // padding: 1vh 0;
+      padding: 2vh 0;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 3vh;
+      line-height: 100%;
+      padding: 1vh 0 1vh;
     }
   `
   export const MainText = styled.p`
@@ -74,7 +86,10 @@ export const Column2 = styled.div`
     font-weight: 400;
 
     @media screen and (max-width: 768px) {
-      font-size: 1.8vh;
+      font-size: 2vh;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 1.2vh;
     }
   `
 
@@ -102,6 +117,10 @@ export const Column3 = styled.div`
       max-width: 52vw;
       height: auto;
       margin: 10vh 0;
+    }
+
+    @media screen and (max-width: 320px) {
+        top: 8vh;
     }
   `
     
