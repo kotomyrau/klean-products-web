@@ -21,7 +21,7 @@ const MainPage = () => {
           </LinkContainer>
         </Column1>
         <Column2>
-          <SubHeader>COMING SOON...</SubHeader>
+          <SubHeader>COMING SOON</SubHeader>
           <Header>klean soap</Header>
           <MainText>Natural Hand Made Soap </MainText>
         </Column2>
