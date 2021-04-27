@@ -43,10 +43,20 @@
     font-weight: 500;
     font-family: 'Playfair Display', serif;
     padding: 4vh 0;
+
+    
   }
+
+
   
   p {
     color: #6B705C;
     font-size: 12px;
     text-align: left;
   }
+/* 
+@media screen and (max-width: 768px) {
+  h6 {
+    font-size: 2px;
+  }
+} */

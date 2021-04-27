@@ -67,9 +67,8 @@ input {
   height: 4vh;
   letter-spacing: 0.8px;
   padding: 0 0 0 15px;
-  width: 16vw;
+  width: 24vw;
 }
-
 /* MESSAGES CLASS */
 form .msg-alert p {
   color: #6B705C !important;
@@ -92,4 +91,22 @@ button {
   height: 4vh;
   padding: 0 1vw;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  /* SUBSCRIBE NEWSLETTER */
+  input {
+    width: 40vw;
+  }
+
+  /* SUBSCRIBE BUTTON */
+button {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+/* CONTACT US FORM (CONTACT PAGE) */
+form label {
+  font-size: 12px;
+}
 }

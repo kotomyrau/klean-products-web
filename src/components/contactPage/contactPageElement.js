@@ -11,5 +11,9 @@ export const ContactContainer = styled.div`
     margin: auto;
     padding: 4vh 2vw;
     text-align: center;
-    width: 32vw;
+    width: 40vw;
+    @media screen and (max-width: 768px) {
+      width: 60vw;
+      margin-top: 0;
+    }
   `
